@@ -5,7 +5,7 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'all',
   "editor.formatOnSave": true,
-  "[javascript]": {
+  "[javascript, typescript]": {
     "editor.formatOnSave": true
   }
 };

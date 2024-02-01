@@ -1,30 +1,24 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Text, View } from "react-native";
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {Text, View} from 'react-native';
+import {HomeScreen} from '../screens/HomeScreen';
 
-function HomeScreen() {
-    return (
-      <View>
-        <Text>Home Screen</Text>
-      </View>
-    );
-  }
-  function AboutScreen() {
-    return (
-      <View>
-        <Text>About Screen</Text>
-      </View>
-    );
-  }
+function AboutScreen() {
+  return (
+    <View>
+      <Text>About Screen</Text>
+    </View>
+  );
+}
 
 const Stack = createNativeStackNavigator();
 
 const AppStack = () => {
-return (
+  return (
     <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="About" component={AboutScreen} />
+      <Stack.Screen name="About" component={AboutScreen} />
+      <Stack.Screen name="Home" component={HomeScreen} />
     </Stack.Navigator>
-);
-}
+  );
+};
 
 export default AppStack;
